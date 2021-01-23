@@ -33,48 +33,51 @@
         </div>
     </header>
 
-    <div class="resource-name">
-        <p>रामायाण</p>
-    </div>
-
-
-    <div class="chapter-selection">
-        <button type="button" class="btn btn-secondary btn-lg">बालकाण्ड</button>
-        <button type="button" class="btn btn-secondary btn-lg">अयॊध्याकाण्ड</button>
-        <button type="button" class="btn btn-secondary btn-lg">अरण्यकाणड</button>
-        <button type="button" class="btn btn-secondary btn-lg">किष्किंधाकाण्ड</button>
-        <button type="button" class="btn btn-secondary btn-lg">सुन्दरकाण्ड</button>
-        <button type="button" class="btn btn-secondary btn-lg">युध्दकण्ड</button>
-        <button type="button" class="btn btn-secondary btn-lg">उत्तर रामायण</button>
-
-    </div>
-
-    <div class="chapter-name">
-        <p>बालकाण्ड</p>
-    </div>
-    {% if ramayana_content %}
+    <div class="resource-content">
     
-        {% for content in ramayana_content %}
-        <div class="services-wrapper">
-            <div class="container svcs-container">
-                <div class="row">
-                    <div class="col-sm-4 verse hoverServices">
-                        {{content.sanskritContent}}
-                        
-                    </div>
-                    <div class="col-sm-7 translation hoverServices">
-                        {{content.translations}}
-                    </div>
-                </div>
-            
-            </div>
+        <div class="resource-name">
+            <p>रामायाण</p>
         </div>
-        {% endfor %}
-      
-    {% else %}
-        <p>No content available</p>
-    {% endif %}
-   
+
+
+        <div class="chapter-selection">
+            <button type="button" class="btn btn-secondary btn-lg">बालकाण्ड</button>
+            <button type="button" class="btn btn-secondary btn-lg">अयॊध्याकाण्ड</button>
+            <button type="button" class="btn btn-secondary btn-lg">अरण्यकाणड</button>
+            <button type="button" class="btn btn-secondary btn-lg">किष्किंधाकाण्ड</button>
+            <button type="button" class="btn btn-secondary btn-lg">सुन्दरकाण्ड</button>
+            <button type="button" class="btn btn-secondary btn-lg">युध्दकण्ड</button>
+            <button type="button" class="btn btn-secondary btn-lg">उत्तर रामायण</button>
+
+        </div>
+
+        <div class="chapter-name">
+            <p>बालकाण्ड</p>
+        </div>
+        {% if ramayana_content %}
+        
+            {% for content in ramayana_content %}
+            <div class="services-wrapper">
+                <div class="container svcs-container">
+                    <div class="row">
+                        <div class="col-sm-4 verse hoverServices">
+                            {{content.sanskritContent}}
+                            
+                        </div>
+                        <div class="col-sm-7 translation hoverServices">
+                            {{content.translations}}
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            {% endfor %}
+        
+        {% else %}
+            <p>No content available</p>
+        {% endif %}
+    <div>
+    
     <div class="footer-dark">
         <footer>
             <!-- <div class="container">

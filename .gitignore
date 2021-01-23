@@ -1,0 +1,4 @@
+.vscode
+sanskrit/__pycache__
+sanskrit/migrations/__pycache__
+sanskritResources/__pycache__
