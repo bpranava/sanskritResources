@@ -12,7 +12,6 @@ def index(request):
 
 def ramayana(request):
     ramayana_content = Content.objects.all()
-    # latest_question_list = Question.objects.order_by('-pub_date')[:5]
     context = {
         'ramayana_content': ramayana_content}
     return render(request, 'sanskrit/ramayana.html', context)
