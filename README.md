@@ -8,4 +8,4 @@ Use following commands after you clone the repository
 `cd sanskritResources`<br>
 `python manage.py runserver`
 
-You can find the application running on : http://127.0.0.1:8000/sanskrit/
+You can find the application running on : http://127.0.0.1:8000
